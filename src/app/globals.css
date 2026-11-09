@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #242424;
+  --primary: #E94B35;
+  --primary-hover: #C83B2A;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for horizontal category chips and cart drawer */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print layout for Kitchen Order Tickets (KOT) */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #kot-printable-area,
+  #kot-printable-area * {
+    visibility: visible;
+  }
+  #kot-printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm; /* standard thermal receipt width */
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 12px;
+    color: black !important;
+    background: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
