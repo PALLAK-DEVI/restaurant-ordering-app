@@ -297,7 +297,7 @@ export const sampleProducts: Product[] = [
     slug: "shahi-nizami-veg-dum-biryani",
     description: "Melange of seasonal vegetables, paneer cubes, and golden caramelized onions layered with fragrant basmati and infused with kewra.",
     basePrice: 29900,
-    imageUrl: "https://images.unsplash.com/photo-1642821373181-696a54913e9a?w=600&auto=format&fit=crop&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=80",
     dietaryType: "veg",
     spiceLevel: 1,
     tags: ["Vegetarian Feast"],
